@@ -6,15 +6,13 @@ function searchInsert(nums, target) {
         const mid = Math.floor((left + right) / 2);
 
         if (nums[mid] === target) {
-            return mid; // Target found, return the index
+            return mid; 
         } else if (nums[mid] < target) {
-            left = mid + 1; // Search on the right side
+            left = mid + 1; 
         } else {
-            right = mid - 1; // Search on the left side
+            right = mid - 1; 
         }
     }
-
-    // If the target is not found, return the insertion index
     return left;
 }
 
